@@ -1,0 +1,8 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    width: 350px;
+    background-color: hsl(225, 100%, 98%);
+}
