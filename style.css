@@ -1,8 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 1440px;
+    max-height: 900px;
 }
 
 .container {
-    width: 350px;
+    width: 325px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.container img {
+    width: 325px;
+    margin-bottom: 25px;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    font-size: 23px;    
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.5em;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
     background-color: hsl(225, 100%, 98%);
+    width: 275px;
+    height: 75px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.plan img {
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 18px;
+    position: absolute;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 75px;
+}
+
+.plan p {
+    position: absolute;
+    left: 45px;
+    top: 40px;
+}
+
+.plan a {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan a:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px 75px;
+    margin-left: 25px;
+    color: hsl(225, 100%, 94%);
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 20px hsl(224, 23%, 55%);
+}
+
+button:hover {
+    background-color: hsl(245, 40%, 60%);
+    cursor: pointer;
+}
+
+.cancel { 
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 110px;
+}
+
+.cancel:hover {
+    color: black;
+} 
+
+@media (max-width: 375px) {
+    body {
+        background-image: none;
+    }
 }
